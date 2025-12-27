@@ -1,11 +1,12 @@
-import "./assets/styles/background.css"
+import "./assets/styles/background.css";
+import Header from "./components/header";
+import Sidebar from "./components/Sidebar";
 
 function App() {
     return (
         <>
-            <div>
-              <h1 className="h1design">HOla como estas</h1>
-            </div>
+            {/* <Header /> */}
+            <Sidebar />
         </>
     );
 }

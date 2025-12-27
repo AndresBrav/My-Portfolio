@@ -9,3 +9,9 @@ body {
     text-align: center;
     padding-top: 20%;
 }
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
