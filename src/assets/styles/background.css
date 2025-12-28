@@ -15,7 +15,7 @@ body {
 
 .container-dashboard {
     position: relative;
-    background: lightgray;
+    background: black;
     height: 100vh;
 }
 
@@ -24,9 +24,27 @@ body {
     color: white;
     height: 100vh;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.9s;
     padding-top: 60px;
     width: 0px; /* cerrado por defecto */
+}
+
+.img-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transition: width 0.3s, height 0.3s; /* animación suave */
+}
+
+/* Para pantallas más grandes (laptop/PC) */
+@media (min-width: 768px) {
+    .img-perfil {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 /* 📱 CELULAR */
