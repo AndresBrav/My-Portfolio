@@ -4,14 +4,8 @@ body {
     font-family: sans-serif;
 }
 
-.h1design {
-    color: white;
-    text-align: center;
-    padding-top: 20%;
-}
-
-.header-container {
+.container-father {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
 }

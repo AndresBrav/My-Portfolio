@@ -5,7 +5,8 @@ const Sidebar = () => {
     const [open, setOpen] = useState(false); // controla abrir/cerrar
 
     return (
-        <div style={{ display: "flex" }}>
+        // <div className="sidebar-container">
+        <div >
             {/* Botón pequeño arriba */}
             <button
                 onClick={() => setOpen(!open)}
