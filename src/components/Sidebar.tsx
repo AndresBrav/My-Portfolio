@@ -1,13 +1,11 @@
 import { useState } from "react";
-import { FiMenu } from "react-icons/fi"; // ICONO del botón
+import { FiMenu } from "react-icons/fi";
 
 const Sidebar = () => {
-    const [open, setOpen] = useState(false); // controla abrir/cerrar
+    const [open, setOpen] = useState(false);
 
     return (
-        // <div className="sidebar-container">
-        <div >
-            {/* Botón pequeño arriba */}
+        <div>
             <button
                 onClick={() => setOpen(!open)}
                 style={{
@@ -26,23 +24,12 @@ const Sidebar = () => {
                 <FiMenu size={30} />
             </button>
 
-            {/* SIDEBAR */}
-            <div
-                style={{
-                    background: "#111",
-                    color: "white",
-                    height: "100vh",
-                    width: open ? "230px" : "0px",
-                    overflow: "hidden",
-                    transition: "0.3s",
-                    paddingTop: "60px", // para que no choque con el botón
-                }}
-            >
-                <h3 style={{ padding: "10px" }}>Menú</h3>
+            <div className={`sidebar ${open ? "open" : ""}`}>
+                <h3>Menú</h3>
                 <ul>
-                    <li style={{ padding: "10px" }}>Inicio</li>
-                    <li style={{ padding: "10px" }}>Perfil</li>
-                    <li style={{ padding: "10px" }}>Ajustes</li>
+                    <li>Inicio</li>
+                    <li>Perfil</li>
+                    <li>Ajustes</li>
                 </ul>
             </div>
         </div>

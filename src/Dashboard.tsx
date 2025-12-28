@@ -5,9 +5,22 @@ const Dashboard = () => {
         <>
             <div className="container-father">
                 <Sidebar />
-                <h1>
-                    hola a todos como estan we are going to explain my projects
-                </h1>
+
+                <div className="container-dashboard">
+                    <br /><br /><br /><br /><br />
+                    <h1 style={{color:"white"}}>
+                        hola como estan todos en este dashboard
+                    </h1>
+                    <h1 style={{color:"white"}}>
+                        hola como estan todos en este dashboard
+                    </h1>
+                    <h1 style={{color:"white"}}>
+                        hola como estan todos en este dashboard
+                    </h1>
+                    
+                </div>
+
+                
             </div>
         </>
     );

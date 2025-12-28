@@ -5,7 +5,40 @@ body {
 }
 
 .container-father {
-    display: flex;
-    justify-content: start;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 4px;
+    grid-row-gap: 0px;
+    height: 100vh;
+}
+
+.container-dashboard {
+    position: relative;
+    background: lightgray;
+    height: 100vh;
+}
+
+.sidebar {
+    background: #111;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    width: 0px; /* cerrado por defecto */
+}
+
+/* 📱 CELULAR */
+@media (max-width: 767px) {
+    .sidebar.open {
+        width: 130px; /* cuando está abierto */
+    }
+}
+
+/* 💻 LAPTOP / PC */
+@media (min-width: 768px) {
+    .sidebar.open {
+        width: 230px;
+    }
 }
