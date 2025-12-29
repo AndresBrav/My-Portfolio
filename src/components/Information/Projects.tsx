@@ -12,8 +12,6 @@ const Projects = () => {
                     <h1 style={{ textAlign: "center", color: "white" }}>
                         this is the projects page
                     </h1>
-
-                    
                 </div>
             </div>
         </>

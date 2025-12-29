@@ -12,7 +12,6 @@ const Contact = () => {
                     <h1 style={{ textAlign: "center", color: "white" }}>
                         this is the contact page
                     </h1>
-                    
                 </div>
             </div>
         </>
