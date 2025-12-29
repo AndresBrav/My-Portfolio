@@ -1,12 +1,18 @@
 body {
-    background-color: rgba(0, 0, 0, 1);
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    /* background-color: #0d0d0d; */
+    background-color: #131314; /*gemini background*/
+
     margin: 0;
+
     font-family: sans-serif;
 }
 
+
+
 .container-father {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 4px;
     grid-row-gap: 0px;
@@ -15,24 +21,65 @@ body {
 
 .container-dashboard {
     position: relative;
-    background: black;
+    /* background: black; */
+    /* background-color: rgba(0, 0, 0, 0.95); 50% de intensidad */
+    /* background-color: white; */
     height: 100vh;
 }
 
 .sidebar {
-    background: #111;
+    /* background: #111; */
+    background-color: #1e1e20; /* 50% de intensidad */
     color: white;
     height: 100vh;
     overflow: hidden;
-    transition: 0.9s;
+    transition: 1s;
     padding-top: 60px;
     width: 0px; /* cerrado por defecto */
+}
+
+.sidebar h3 {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+/* List Reset */
+.sidebar ul {
+    list-style: none; /* Removes bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+/* Link Styling */
+.sidebar ul li a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Soft grey text */
+    font-size: 1.1rem;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+/* Hover Effect */
+.sidebar ul li a:hover {
+    background-color: #333; /* Darker grey background */
+    color: #ffffff; /* Brighter white text */
+    padding-left: 30px; /* Slight move to the right effect */
 }
 
 .img-perfil {
     width: 200px;
     height: 200px;
-    border-radius: 0%;
+    border-radius: 50%;
     object-fit: cover;
     display: block;
     margin: 0 auto;
@@ -50,7 +97,10 @@ body {
 /* 📱 CELULAR */
 @media (max-width: 767px) {
     .sidebar.open {
-        width: 130px; /* cuando está abierto */
+        width: 25vw; /* cuando está abierto */
+    }
+    .sidebar ul li a:hover {
+        padding-left: 10px; /* ajuste para pantallas más grandes */
     }
 }
 

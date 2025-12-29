@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
-
+import { Link } from "react-router-dom";
 const Sidebar = () => {
     const [open, setOpen] = useState(false);
 
@@ -25,11 +25,11 @@ const Sidebar = () => {
             </button>
 
             <div className={`sidebar ${open ? "open" : ""}`}>
-                <h3>Menú</h3>
+                <h3>Menu</h3>
                 <ul>
-                    <li>Inicio</li>
-                    <li>Perfil</li>
-                    <li>Ajustes</li>
+                    <li><Link to="/">About</Link></li>
+                    <li><Link to="/projects">Projects</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
         </div>
