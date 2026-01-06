@@ -10,7 +10,7 @@ const Dashboard = () => {
                 <div className="container-dashboard">
                     <br />
 
-                    <h1 style={{ textAlign: "center" }}>
+                    <h1 style={{ textAlign: "center", color: "white" }}>
                         Andres Bravo Aguilar
                     </h1>
                     <img
@@ -19,14 +19,17 @@ const Dashboard = () => {
                         alt="Mi imagenAndres"
                     />
 
-                    <h1 style={{ color: "white" }}>
-                        hola como estan todos en este dashboard
-                    </h1>
-                    <h1 style={{ color: "white" }}>
-                        hola como estan todos en este dashboard
-                    </h1>
-                    <h1 style={{ color: "white" }}>
-                        hola como estan todos en este dashboard
+                    <h1 className="description-information">
+                        Final semester student of Computer Systems Engineering
+                        (Bachelor's Degree) with over a year of professional
+                        experience in Full-Stack web application development. I
+                        have worked with Laravel and JavaScript, with
+                        proficiency in modern frameworks such as Node JS, React
+                        JS, and relational databases. I love developing
+                        software, learning new technologies, and tackling
+                        technical challenges. I am looking for a team where I
+                        can continue to improve my skills, add value, and grow
+                        professionally
                     </h1>
                 </div>
             </div>

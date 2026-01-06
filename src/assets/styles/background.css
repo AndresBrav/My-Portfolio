@@ -1,14 +1,13 @@
 body {
     /* background-color: rgba(0, 0, 0, 0.9); */
     /* background-color: #0d0d0d; */
-    background-color: #131314; /*gemini background*/
+    background-color: #131314; /* gemini background */
+    /* background: (24, 24, 24, 1); */
 
     margin: 0;
 
     font-family: sans-serif;
 }
-
-
 
 .container-father {
     display: grid;
@@ -86,6 +85,12 @@ body {
     transition: width 0.3s, height 0.3s; /* animación suave */
 }
 
+.description-information {
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+}
+
 /* Para pantallas más grandes (laptop/PC) */
 @media (min-width: 768px) {
     .img-perfil {
@@ -101,6 +106,10 @@ body {
     }
     .sidebar ul li a:hover {
         padding-left: 10px; /* ajuste para pantallas más grandes */
+    }
+    .description-information {
+        text-align: left;
+        font-size: 15px;
     }
 }
 
