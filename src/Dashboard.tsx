@@ -31,6 +31,8 @@ const Dashboard = () => {
                         can continue to improve my skills, add value, and grow
                         professionally
                     </h1>
+
+                    <h1 className="certificates">CERTIFICATES</h1>
                 </div>
             </div>
         </>

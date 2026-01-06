@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { Link } from "react-router-dom";
 const Sidebar = () => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
 
     return (
         <div>
