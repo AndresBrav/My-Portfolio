@@ -99,10 +99,30 @@ body {
     color: white;
 }
 
-.certificates:hover {
-    color: white; /* Brighter white text */
-    font-size: 35px;
 
+
+/* src/styles/card.css */
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 5px;
+    width: 280px;
+    height: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #555;
 }
 
 /* Para pantallas más grandes (laptop/PC) */
@@ -124,6 +144,10 @@ body {
     .description-information {
         text-align: left;
         font-size: 15px;
+    }
+    .card {
+        width: 100px;
+        height: 100px;
     }
 }
 

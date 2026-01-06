@@ -1,5 +1,6 @@
 import Sidebar from "./components/Sidebar";
 import imagenAndres from "./assets/images/AndresBravo.jpg";
+import Card from "./components/Card";
 
 const Dashboard = () => {
     return (
@@ -33,6 +34,25 @@ const Dashboard = () => {
                     </h1>
 
                     <h1 className="certificates">CERTIFICATES</h1>
+
+                    <div style={{ display: "flex", justifyContent: "flex-start", gap: "5px" }}>
+                        <Card
+                            title="React"
+                            description="Librería para interfaces UI"
+                        />
+                        <Card
+                            title="Node.js"
+                            description="Backend con JavaScript"
+                        />
+                        <Card
+                            title="Node.js"
+                            description="Backend con JavaScript"
+                        />
+                        <Card
+                            title="Node.js"
+                            description="Backend con JavaScript"
+                        />
+                    </div>
                 </div>
             </div>
         </>
