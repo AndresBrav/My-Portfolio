@@ -1,6 +1,10 @@
 import Sidebar from "./components/Sidebar";
 import imagenAndres from "./assets/images/AndresBravo.jpg";
 import Card from "./components/Card";
+import redes from "./assets/images/redes.jpg";
+import java from "./assets/images/java.jpg";
+import spring from "./assets/images/spring boot.jpg";
+import comteco from "./assets/images/comteco.jpg";
 
 const Dashboard = () => {
     return (
@@ -9,6 +13,8 @@ const Dashboard = () => {
                 <Sidebar />
 
                 <div className="container-dashboard">
+                    <br />
+                    <br />
                     <br />
 
                     <h1 style={{ textAlign: "center", color: "white" }}>
@@ -35,22 +41,33 @@ const Dashboard = () => {
 
                     <h1 className="certificates">CERTIFICATES</h1>
 
-                    <div style={{ display: "flex", justifyContent: "flex-start", gap: "5px" }}>
+                    <div
+                        style={{
+                            display: "flex",
+                            justifyContent: "flex-start",
+                            flexWrap: "wrap",
+                            gap: "25px",
+                        }}
+                    >
                         <Card
-                            title="React"
-                            description="Librería para interfaces UI"
+                            title="Internship Certificate - Comteco"
+                            img={comteco}
+                            description="Cochabamba, Bolivia | Aug 2025 "
                         />
                         <Card
-                            title="Node.js"
-                            description="Backend con JavaScript"
+                            title="Java Programming Course – Mayor de San Simon University"
+                            img={java}
+                            description="Cochabamba, Bolivia | Sep 2025"
                         />
                         <Card
-                            title="Node.js"
-                            description="Backend con JavaScript"
+                            title="Spring Boot Framework Course – Mayor de San Simon University"
+                            img={spring}
+                            description="Cochabamba, Bolivia | Sep 2024"
                         />
                         <Card
-                            title="Node.js"
-                            description="Backend con JavaScript"
+                            title="Information Routing in Networks - Mayor de San Simon University"
+                            img={redes}
+                            description="Cochabamba, Bolivia | Mar 2023 – Apr 2023"
                         />
                     </div>
                 </div>
