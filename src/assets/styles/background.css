@@ -20,9 +20,6 @@ body {
 
 .container-dashboard {
     position: relative;
-    /* background: black; */
-    /* background-color: rgba(0, 0, 0, 0.95); 50% de intensidad */
-    /* background-color: white; */
     height: 100vh;
 }
 
@@ -217,6 +214,6 @@ body {
 /* 💻 LAPTOP / PC */
 @media (min-width: 768px) {
     .sidebar.open {
-        width: 230px;
+        width: 200px;
     }
 }
