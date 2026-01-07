@@ -29,11 +29,35 @@ const Projects = () => {
                         }}
                     >
                         <CardProjects
-                            title="Internship Certificate - Comteco"
+                            title="System for managing automobiles"
                             img={comteco}
-                            description="Cochabamba, Bolivia | Aug 2025 "
-                            boton={<button>View Repository</button>}
-                        />
+                            description="Cochabamba, Bolivia | Aug 2025"
+                        >
+                            <div className="buttons-container">
+                                <button
+                                    onClick={() =>
+                                        window.open(
+                                            "https://github.com/AndresBrav/FRONTEND-NEXT-JS-CARS",
+                                            "_blank"
+                                        )
+                                    }
+                                >
+                                    Frontend Repository
+                                </button>
+
+                                <button
+                                    onClick={() =>
+                                        window.open(
+                                            "https://github.com/AndresBrav/FRONTEND-NEXT-JS-CARS",
+                                            "_blank"
+                                        )
+                                    }
+                                >
+                                    Backend Repository
+                                </button>
+                            </div>
+                        </CardProjects>
+
                         {/* <CardProjects
                             title="Java Programming Course – Mayor de San Simon University"
                             img={java}

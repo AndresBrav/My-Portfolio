@@ -96,30 +96,6 @@ body {
     color: white;
 }
 
-/* src/styles/card.css */
-/* .card {
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 5px;
-    width: 280px;
-    height: 250px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
-}
-
-.card h3 {
-    margin-bottom: 8px;
-}
-
-.card p {
-    color: #555;
-} */
-
 /* ===== CARD DARK MODE ===== */
 .card {
     background: #1e1e20; /* fondo oscuro */
@@ -140,7 +116,6 @@ body {
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 5px 5px 5px 0 rgba(255, 255, 255, 0.5);
-    
 }
 
 .card h3 {
@@ -168,6 +143,101 @@ body {
     text-align: center;
 }
 
+.cardP {
+    background: #1e1e20; /* fondo oscuro */
+    color: #fff; /* texto claro */
+    border-radius: 20px;
+    padding: 12px;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* contenido desde arriba */
+}
+
+.cardP:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+.cardP h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff; /* título claro */
+}
+
+/* 🔥 Imagen ocupa 80% de la card */
+.cardP img {
+    width: 100%; /* casi todo el ancho */
+    height: 70%; /* 80% del alto de la card */
+    object-fit: cover; /* mantiene proporción */
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background-color: #2a2a2d; /* fondo oscuro para imagen más limpia */
+}
+
+/* Texto debajo de la imagen */
+.cardP p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ccc; /* gris claro para leer bien sobre oscuro */
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex; /* activa flexbox */
+    justify-content: center; /* centra horizontalmente */
+    gap: 5px; /* espacio entre botones */
+    /* margin-top: auto; empuja los botones hacia abajo */
+    /* margin-bottom: 5px; */
+}
+
+.cardP button {
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: #ccc;
+
+    background: linear-gradient(135deg, #1f7a4a, #145a32);
+    color: #e8f5ec;
+
+    font-size: 1rem;
+    /* font-weight: 100; */
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(31, 122, 74, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.cardP button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #249c5b, #1f7a4a);
+    box-shadow: 0 6px 18px rgba(31, 122, 74, 0.55);
+}
+
+.cardP button:active {
+    transform: scale(0.96);
+    box-shadow: 0 3px 10px rgba(31, 122, 74, 0.3);
+}
+
+/* Para pantallas más pequeñas (celulares) */
+@media (max-width: 767px) {
+    .cardP button {
+        padding: 6px 8px; /* menos padding */
+        font-size: 0.9rem; /* texto más pequeño */
+        border-radius: 10px; /* un poco más pequeño */
+    }
+
+    /* Opcional: reducir gap entre botones */
+    .buttons-container {
+        gap: 5px;
+    }
+}
+
 /* ===== RESPONSIVE CELULAR ===== */
 @media (max-width: 767px) {
     .card {
@@ -184,6 +254,22 @@ body {
     }
 
     .card p {
+        font-size: 0.85rem;
+    }
+    .cardP {
+        width: 300px;
+        height: 300px;
+    }
+
+    .cardP img {
+        height: 80%; /* mantiene proporción */
+    }
+
+    .cardP h3 {
+        font-size: 1rem;
+    }
+
+    .cardP p {
         font-size: 0.85rem;
     }
 }
@@ -208,7 +294,6 @@ body {
         text-align: left;
         font-size: 15px;
     }
-    
 }
 
 /* 💻 LAPTOP / PC */
