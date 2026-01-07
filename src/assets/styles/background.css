@@ -175,7 +175,7 @@ body {
 .cardP img {
     width: 100%; /* casi todo el ancho */
     height: 70%; /* 80% del alto de la card */
-    object-fit: cover; /* mantiene proporción */
+    object-fit: contain; /* mantiene proporción */
     border-radius: 12px;
     margin-bottom: 10px;
     background-color: #2a2a2d; /* fondo oscuro para imagen más limpia */

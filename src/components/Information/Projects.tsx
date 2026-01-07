@@ -1,8 +1,6 @@
 import Sidebar from "../Sidebar";
-import redes from "../../assets/images/redes.jpg";
-import java from "../../assets/images/java.jpg";
-import spring from "../../assets/images/spring boot.jpg";
-import comteco from "../../assets/images/comteco.jpg";
+
+import cars from "../../assets/images/cars.png";
 import CardProjects from "../CardProjects";
 
 const Projects = () => {
@@ -30,7 +28,7 @@ const Projects = () => {
                     >
                         <CardProjects
                             title="System for managing automobiles"
-                            img={comteco}
+                            img={cars}
                             description="Cochabamba, Bolivia | Aug 2025"
                         >
                             <div className="buttons-container">
