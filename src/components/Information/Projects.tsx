@@ -29,7 +29,7 @@ const Projects = () => {
                         <CardProjects
                             title="System for managing automobiles"
                             img={cars}
-                            description="Cochabamba, Bolivia | Aug 2025"
+                            description="A comprehensive vehicle management system was developed, including the modeling and implementation of a MySQL database, as well as the development of a REST API using Node.js, Express.js, and TypeScript. The system incorporated user authentication and authorization using tokens to ensure secure access to resources. The Sequelize ORM was used for database queries. Furthermore, a graphical user interface was developed using Next.js, providing a modern and intuitive user experience, and functionalities were implemented that allow generating and saving system information to .pdf and .txt files directly from the database data."
                         >
                             <div className="buttons-container">
                                 <button

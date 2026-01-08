@@ -17,7 +17,8 @@ export default function CardProjects({
         <div className="cardP">
             <h3>{title}</h3>
             <img src={img} alt={title} />
-            <p>{description}</p>
+            <p style={{textAlign:"center", fontSize:"15px"}}>{description}</p>
+            <br />
             {children}
         </div>
     );
