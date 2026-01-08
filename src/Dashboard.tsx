@@ -1,24 +1,32 @@
 import Sidebar from "./components/Sidebar";
 import imagenAndres from "./assets/images/AndresBravo.jpg";
-import Card from "./components/Card";
+import Card from "./components/Cards/Card";
 import redes from "./assets/images/redes.jpg";
 import java from "./assets/images/java.jpg";
 import spring from "./assets/images/spring boot.jpg";
 import comteco from "./assets/images/comteco.jpg";
+import HeaderOptions from "./components/Cards/HeaderOptions";
+import Tools from "./components/Cards/Tools";
+
 
 const Dashboard = () => {
     return (
         <>
+            <header className="header">
+                <HeaderOptions />
+            </header>
+            <br />
+            <br />
+            <br />
             <div className="container-father">
-                <Sidebar />
-
+                <div> </div> {/* elemento primero lugar del grid */}
                 <div className="container-dashboard">
-                    <br />
-                    <br />
+                    {/* <HeaderOptions /> */}
+
                     <br />
 
                     <h1 style={{ textAlign: "center", color: "white" }}>
-                        Andres Bravo Aguilar
+                        ANDRES BRAVO AGUILAR
                     </h1>
                     <img
                         className="img-perfil"
@@ -39,12 +47,14 @@ const Dashboard = () => {
                         professionally
                     </h1>
 
+                    <Tools/>
+
                     <h1 className="certificates">CERTIFICATES</h1>
 
                     <div
                         style={{
                             display: "flex",
-                            justifyContent: "flex-start",
+                            justifyContent: "center",
                             flexWrap: "wrap",
                             gap: "25px",
                         }}

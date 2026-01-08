@@ -1,14 +1,22 @@
-import Sidebar from "../Sidebar";
+// import Sidebar from "../Sidebar";
 
 import cars from "../../assets/images/cars.png";
-import CardProjects from "../CardProjects";
+import game from "../../assets/images/game1.png";
+
+import CardProjects from "../Cards/CardProjects";
+import HeaderOptions from "../Cards/HeaderOptions";
 
 const Projects = () => {
     return (
         <>
+            <header className="header">
+                <HeaderOptions />
+            </header>
+            <br />
+            <br />
+            <br />
             <div className="container-father">
-                <Sidebar />
-
+                <div></div> {/* first element */}
                 <div className="container-dashboard">
                     <br />
                     <br />
@@ -58,7 +66,7 @@ const Projects = () => {
 
                         <CardProjects
                             title="Programming Logic Video Game"
-                            img={cars}
+                            img={game}
                             description="An educational video game was developed to teach programming logic to first-semester Systems Engineering students at the Universidad Mayor de San Simón. The project included the modeling and implementation of a MySQL database, as well as the development of a REST API using Node.js, Express.js, and TypeScript. User authentication and authorization mechanisms were implemented using tokens to secure system access, and the Sequelize ORM was used for data management and querying in the database. Game mockups were designed as part of the user experience planning, and the graphical interface was developed using React.js and TypeScript, resulting in an interactive and learning-oriented application."
                         >
                             <div className="buttons-container">
