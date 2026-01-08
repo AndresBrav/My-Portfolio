@@ -56,21 +56,35 @@ const Projects = () => {
                             </div>
                         </CardProjects>
 
-                        {/* <CardProjects
-                            title="Java Programming Course – Mayor de San Simon University"
-                            img={java}
-                            description="Cochabamba, Bolivia | Sep 2025"
-                        />
                         <CardProjects
-                            title="Spring Boot Framework Course – Mayor de San Simon University"
-                            img={spring}
-                            description="Cochabamba, Bolivia | Sep 2024"
-                        />
-                        <CardProjects
-                            title="Information Routing in Networks - Mayor de San Simon University"
-                            img={redes}
-                            description="Cochabamba, Bolivia | Mar 2023 – Apr 2023"
-                        /> */}
+                            title="Programming Logic Video Game"
+                            img={cars}
+                            description="An educational video game was developed to teach programming logic to first-semester Systems Engineering students at the Universidad Mayor de San Simón. The project included the modeling and implementation of a MySQL database, as well as the development of a REST API using Node.js, Express.js, and TypeScript. User authentication and authorization mechanisms were implemented using tokens to secure system access, and the Sequelize ORM was used for data management and querying in the database. Game mockups were designed as part of the user experience planning, and the graphical interface was developed using React.js and TypeScript, resulting in an interactive and learning-oriented application."
+                        >
+                            <div className="buttons-container">
+                                <button
+                                    onClick={() =>
+                                        window.open(
+                                            "https://github.com/AndresBrav/PG-Frontend-TS-",
+                                            "_blank"
+                                        )
+                                    }
+                                >
+                                    Frontend Repository
+                                </button>
+
+                                <button
+                                    onClick={() =>
+                                        window.open(
+                                            "https://github.com/AndresBrav/Backend_JuegoLP",
+                                            "_blank"
+                                        )
+                                    }
+                                >
+                                    Backend Repository
+                                </button>
+                            </div>
+                        </CardProjects>
                     </div>
                 </div>
             </div>
