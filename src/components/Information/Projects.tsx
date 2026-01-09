@@ -96,9 +96,7 @@ const Projects = () => {
                         <CardProjects
                             title="classroom reservation system at Mayor de San Simón University"
                             img={aulas}
-                            description="Development of a classroom reservation management system for the Faculty of Technology at the Universidad Mayor de San Simón, designed to manage classrooms, schedules, and reservation dates for academic staff. The system was built using Laravel as part of the Software Engineering Workshop course and includes authentication and authorization features for teachers and administrators. The database was modeled using PowerDesigner, and Laravel Eloquent ORM was used to design and execute database queries, ensuring data integrity, efficient reservation management, and role-based access control.
-
-Translated with DeepL.com (free version)"
+                            description="Development of a classroom reservation management system for the Faculty of Technology at the Universidad Mayor de San Simón, designed to manage classrooms, schedules, and reservation dates for academic staff. The system was built using Laravel as part of the Software Engineering Workshop course and includes authentication and authorization features for teachers and administrators. The database was modeled using PowerDesigner, and Laravel Eloquent ORM was used to design and execute database queries, ensuring data integrity, efficient reservation management, and role-based access control."
                         >
                             <div className="buttons-container">
                                 <button
