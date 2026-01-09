@@ -1,4 +1,3 @@
-// import Sidebar from "../Sidebar";
 
 import cars from "../../assets/images/cars.png";
 import game from "../../assets/images/game1.png";

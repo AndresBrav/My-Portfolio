@@ -1,4 +1,3 @@
-import Sidebar from "./components/Sidebar";
 import imagenAndres from "./assets/images/AndresBravo.jpg";
 import Card from "./components/Cards/Card";
 import redes from "./assets/images/redes.jpg";
