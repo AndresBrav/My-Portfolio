@@ -2,6 +2,7 @@
 
 import cars from "../../assets/images/cars.png";
 import game from "../../assets/images/game1.png";
+import aulas from "../../assets/images/administracion aulas.png";
 
 import CardProjects from "../Cards/CardProjects";
 import HeaderOptions from "../Cards/HeaderOptions";
@@ -29,7 +30,7 @@ const Projects = () => {
                     <div
                         style={{
                             display: "flex",
-                            justifyContent: "flex-start",
+                            justifyContent: "center",
                             flexWrap: "wrap",
                             gap: "25px",
                         }}
@@ -90,6 +91,27 @@ const Projects = () => {
                                     }
                                 >
                                     Backend Repository
+                                </button>
+                            </div>
+                        </CardProjects>
+
+                        <CardProjects
+                            title="classroom reservation system at Mayor de San Simón University"
+                            img={aulas}
+                            description="Development of a classroom reservation management system for the Faculty of Technology at the Universidad Mayor de San Simón, designed to manage classrooms, schedules, and reservation dates for academic staff. The system was built using Laravel as part of the Software Engineering Workshop course and includes authentication and authorization features for teachers and administrators. The database was modeled using PowerDesigner, and Laravel Eloquent ORM was used to design and execute database queries, ensuring data integrity, efficient reservation management, and role-based access control.
+
+Translated with DeepL.com (free version)"
+                        >
+                            <div className="buttons-container">
+                                <button
+                                    onClick={() =>
+                                        window.open(
+                                            "https://github.com/ruddy500/ReservSystem/tree/ramaRenovada",
+                                            "_blank"
+                                        )
+                                    }
+                                >
+                                    Repository
                                 </button>
                             </div>
                         </CardProjects>
