@@ -20,8 +20,7 @@ const Projects = () => {
                 <div></div> {/* first element */}
                 <div className="container-dashboard">
                     <br />
-                    <br />
-                    <br />
+                    
                     <h1 style={{ textAlign: "center", color: "white" }}>
                         Completed Projects
                     </h1>
