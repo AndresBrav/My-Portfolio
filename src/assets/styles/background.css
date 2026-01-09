@@ -30,8 +30,6 @@ body {
     right: 20px;
     /* width: 100%; */
     z-index: 9999; /* superpuesto a todo */
-
-    
 }
 
 .nav-list {
@@ -230,7 +228,6 @@ body {
     box-shadow: 0 3px 10px rgba(31, 122, 74, 0.3);
 }
 
-
 .cardTool {
     background: #1e1e20; /* fondo oscuro */
     color: #fff; /* texto claro */
@@ -270,6 +267,15 @@ body {
     background-color: #1e1e20; /* fondo oscuro para imagen más limpia */
 }
 
+.targets-grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    /* grid-template-rows: 1fr; */
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    margin-bottom: 20px;
+}
+
 /* Para pantallas más pequeñas (celulares) */
 @media (max-width: 767px) {
     .cardP button {
@@ -289,6 +295,10 @@ body {
 
     .nav-list a {
         font-size: 16px;
+    }
+
+    .targets-grid{
+        grid-template-columns: 1fr;
     }
 }
 

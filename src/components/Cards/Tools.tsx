@@ -27,79 +27,146 @@ const Tools = () => {
             <h1 style={{ textAlign: "center", color: "white" }}>
                 TECHNOLOGIES I USE
             </h1>
-            <h1 style={{ textAlign: "center", color: "white" }}>LANGUAJES</h1>
 
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                    gap: "25px",
-                }}
-            >
-                <CardTools title="Javascript" img={javascriptLogo} />
-                <CardTools title="Java" img={javaLogo} />
-                <CardTools title="Python" img={pythonlogo} />
-                <CardTools title="Typescript" img={typescriptlogo} />
+            <div className="targets-grid">
+                {" "}
+                {/* grid 2 columnas 1 fila */}
+                <div>
+                    <h1
+                        style={{
+                            textAlign: "center",
+                            color: "white",
+                            fontSize: "22px",
+                        }}
+                    >
+                        Languages
+                    </h1>
+                </div>
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        flexWrap: "wrap",
+                        gap: "25px",
+                    }}
+                >
+                    <CardTools title="Javascript" img={javascriptLogo} />
+                    <CardTools title="Java" img={javaLogo} />
+                    <CardTools title="Python" img={pythonlogo} />
+                    <CardTools title="Typescript" img={typescriptlogo} />
+                </div>
             </div>
 
-            <h1 style={{ textAlign: "center", color: "white" }}>Frontend</h1>
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                    gap: "25px",
-                }}
-            >
-                <CardTools title="React js" img={react} />
-                <CardTools title="Next js" img={nextjslogo} />
-                <CardTools title="HTML" img={htmllogo} />
-                <CardTools title="CSS" img={csslogo} />
+            <div className="targets-grid">
+                <div>
+                    <h1
+                        style={{
+                            textAlign: "center",
+                            color: "white",
+                            fontSize: "22px",
+                        }}
+                    >
+                        Frontend
+                    </h1>
+                </div>
+
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        flexWrap: "wrap",
+                        gap: "25px",
+                    }}
+                >
+                    <CardTools title="React js" img={react} />
+                    <CardTools title="Next js" img={nextjslogo} />
+                    <CardTools title="HTML" img={htmllogo} />
+                    <CardTools title="CSS" img={csslogo} />
+                </div>
             </div>
 
-            <h1 style={{ textAlign: "center", color: "white" }}>Backend</h1>
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                    gap: "25px",
-                }}
-            >
-                <CardTools title="Laravel" img={laravellogo} />
-                <CardTools title="Node js" img={nodelogo} />
-                <CardTools title="Express js" img={expresslogo} />
+            <div className="targets-grid">
+                <div>
+                    <h1
+                        style={{
+                            textAlign: "center",
+                            color: "white",
+                            fontSize: "22px",
+                        }}
+                    >
+                        Backend
+                    </h1>
+                </div>
+
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        flexWrap: "wrap",
+                        gap: "25px",
+                    }}
+                >
+                    <CardTools title="Laravel" img={laravellogo} />
+                    <CardTools title="Node js" img={nodelogo} />
+                    <CardTools title="Express js" img={expresslogo} />
+                </div>
             </div>
-            <h1 style={{ textAlign: "center", color: "white" }}>Databases</h1>
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                    gap: "25px",
-                }}
-            >
-                <CardTools title="Postgres SQL" img={postgreslogo} />
-                <CardTools title="MySQL" img={mysqllogo} />
+
+            <div className="targets-grid">
+                <div>
+                    <h1
+                        style={{
+                            textAlign: "center",
+                            color: "white",
+                            fontSize: "22px",
+                        }}
+                    >
+                        Databases
+                    </h1>
+                </div>
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        flexWrap: "wrap",
+                        gap: "25px",
+                    }}
+                >
+                    <CardTools title="Postgres SQL" img={postgreslogo} />
+                    <CardTools title="MySQL" img={mysqllogo} />
+                </div>
             </div>
-            <h1 style={{ textAlign: "center", color: "white" }}>Tools</h1>
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                    gap: "25px",
-                }}
-            >
-                <CardTools title="Ubuntu" img={ubuntu} />
-                <CardTools title="Docker" img={docker} />
-                <CardTools title="Git" img={git} />
-                <CardTools title="GitHub" img={github} />
-                <CardTools title="Postman" img={postman} />
-                <CardTools title="DBngin" img={dbngin} />
-                <CardTools title="Xampp" img={xampp} />
-                <CardTools title="Figma" img={figma} />
+
+            <div className="targets-grid">
+                <div>
+                    <h1
+                        style={{
+                            textAlign: "center",
+                            color: "white",
+                            fontSize: "22px",
+                        }}
+                    >
+                        Tools
+                    </h1>
+                </div>
+
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        flexWrap: "wrap",
+                        gap: "25px",
+                    }}
+                >
+                    <CardTools title="Ubuntu" img={ubuntu} />
+                    <CardTools title="Docker" img={docker} />
+                    <CardTools title="Git" img={git} />
+                    <CardTools title="GitHub" img={github} />
+                    <CardTools title="Postman" img={postman} />
+                    <CardTools title="DBngin" img={dbngin} />
+                    <CardTools title="Xampp" img={xampp} />
+                    <CardTools title="Figma" img={figma} />
+                </div>
             </div>
         </>
     );
