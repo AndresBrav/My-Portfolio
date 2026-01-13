@@ -152,7 +152,7 @@ const Contact = () => {
                                 alt="Gmail"
                                 style={{ width: "30px", height: "30px" }}
                             />
-                            <span>bravoandres1706@gmail.com</span>
+                            <span>andbrav1917@gmail.com</span>
                         </li>
                     </ul>
 
