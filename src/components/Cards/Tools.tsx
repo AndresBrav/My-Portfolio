@@ -20,6 +20,11 @@ import postman from "../../assets/images/postman logo.png";
 import github from "../../assets/images/github logo.png";
 import git from "../../assets/images/git logo.png";
 import xampp from "../../assets/images/xampp logo.svg";
+import angular from "../../assets/images/angular logo svg.png";
+import net from "../../assets/images/NET.png";
+import csharp from "../../assets/images/C logo.png";
+
+
 
 const Tools = () => {
     return (
@@ -50,6 +55,7 @@ const Tools = () => {
                         gap: "25px",
                     }}
                 >
+                    <CardTools title="C#" img={csharp} />
                     <CardTools title="Javascript" img={javascriptLogo} />
                     <CardTools title="Java" img={javaLogo} />
                     <CardTools title="Python" img={pythonlogo} />
@@ -78,6 +84,7 @@ const Tools = () => {
                         gap: "25px",
                     }}
                 >
+                    <CardTools title="Angular js" img={angular} />
                     <CardTools title="React js" img={react} />
                     <CardTools title="Next js" img={nextjslogo} />
                     <CardTools title="HTML" img={htmllogo} />
@@ -106,6 +113,7 @@ const Tools = () => {
                         gap: "25px",
                     }}
                 >
+                    <CardTools title=".NET" img={net} />
                     <CardTools title="Laravel" img={laravellogo} />
                     <CardTools title="Node js" img={nodelogo} />
                     <CardTools title="Express js" img={expresslogo} />

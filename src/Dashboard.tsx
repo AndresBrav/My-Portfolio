@@ -35,10 +35,10 @@ const Dashboard = () => {
 
                     <h1 className="description-information">
                         Final semester student of Computer Systems Engineering
-                        (Bachelor's Degree) with over a year of professional
+                        (Bachelor's Degree) with over a year of
                         experience in Full-Stack web application development. I
                         have worked with Laravel and JavaScript, with
-                        proficiency in modern frameworks such as Node JS, React
+                        proficiency in modern frameworks such as Angular, Node JS, React
                         JS, and relational databases. I love developing
                         software, learning new technologies, and tackling
                         technical challenges. I am looking for a team where I
