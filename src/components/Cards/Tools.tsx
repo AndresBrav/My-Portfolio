@@ -84,7 +84,7 @@ const Tools = () => {
                         gap: "25px",
                     }}
                 >
-                    <CardTools title="Angular js" img={angular} />
+                    <CardTools title="Angular" img={angular} />
                     <CardTools title="React js" img={react} />
                     <CardTools title="Next js" img={nextjslogo} />
                     <CardTools title="HTML" img={htmllogo} />
