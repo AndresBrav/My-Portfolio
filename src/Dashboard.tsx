@@ -1,12 +1,12 @@
 import imagenAndres from "./assets/images/AndresBravo.jpg";
 import Card from "./components/Cards/Card";
 import redes from "./assets/images/redes.jpg";
+import goit from "./assets/images/goit certificate.jpg";
 import java from "./assets/images/java.jpg";
 import spring from "./assets/images/spring boot.jpg";
 import comteco from "./assets/images/comteco.jpg";
 import HeaderOptions from "./components/Cards/HeaderOptions";
 import Tools from "./components/Cards/Tools";
-
 
 const Dashboard = () => {
     return (
@@ -35,18 +35,17 @@ const Dashboard = () => {
 
                     <h1 className="description-information">
                         Final semester student of Computer Systems Engineering
-                        (Bachelor's Degree) with over a year of
-                        experience in Full-Stack web application development. I
-                        have worked with Laravel and JavaScript, with
-                        proficiency in modern frameworks such as Angular, Node JS, React
-                        JS, and relational databases. I love developing
-                        software, learning new technologies, and tackling
-                        technical challenges. I am looking for a team where I
-                        can continue to improve my skills, add value, and grow
-                        professionally
+                        (Bachelor's Degree) with over a two years of experience
+                        in Full-Stack web application development. I have worked
+                        with Laravel and JavaScript, with proficiency in modern
+                        frameworks such as Angular, Node JS, React JS, and
+                        relational databases. I love developing software,
+                        learning new technologies, and tackling technical
+                        challenges. I am looking for a team where I can continue
+                        to improve my skills, add value, and grow professionally
                     </h1>
 
-                    <Tools/>
+                    <Tools />
 
                     <h1 className="certificates">CERTIFICATES</h1>
 
@@ -55,7 +54,7 @@ const Dashboard = () => {
                             display: "flex",
                             justifyContent: "center",
                             flexWrap: "wrap",
-                            gap: "25px",
+                            gap: "10px",
                         }}
                     >
                         <Card
@@ -77,6 +76,11 @@ const Dashboard = () => {
                             title="Information Routing in Networks - Mayor de San Simon University"
                             img={redes}
                             description="Cochabamba, Bolivia | Mar 2023 – Apr 2023"
+                        />
+                        <Card
+                            title="Internship Certificate - Goit"
+                            img={goit}
+                            description="Cochabamba, Bolivia | Mar 2026 – Jun 2026"
                         />
                     </div>
                 </div>

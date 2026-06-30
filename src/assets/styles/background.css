@@ -83,7 +83,9 @@ body {
     object-fit: cover;
     display: block;
     margin: 0 auto;
-    transition: width 0.3s, height 0.3s; /* animación suave */
+    transition:
+        width 0.3s,
+        height 0.3s; /* animación suave */
 }
 
 .description-information {
@@ -105,11 +107,13 @@ body {
     background: #1e1e20; /* fondo oscuro */
     color: #fff; /* texto claro */
     border-radius: 20px;
-    padding: 12px;
-    width: 350px;
-    height: 350px;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease; */
 
     display: flex;
     flex-direction: column;
@@ -117,10 +121,10 @@ body {
     justify-content: flex-start; /* contenido desde arriba */
 }
 
-.card:hover {
+/* .card:hover {
     transform: translateY(-10px);
     box-shadow: 5px 5px 5px 0 rgba(255, 255, 255, 0.5);
-}
+} */
 
 .card h3 {
     margin: 10px 0;
@@ -155,7 +159,9 @@ body {
     width: 450px;
     height: 600px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 
     display: flex;
     flex-direction: column;
@@ -214,7 +220,10 @@ body {
     cursor: pointer;
 
     box-shadow: 0 4px 12px rgba(31, 122, 74, 0.35);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
 }
 
 .cardP button:hover {
@@ -236,7 +245,9 @@ body {
     width: 100px;
     height: 150px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 
     display: flex;
     flex-direction: column;
@@ -297,7 +308,7 @@ body {
         font-size: 16px;
     }
 
-    .targets-grid{
+    .targets-grid {
         grid-template-columns: 1fr;
     }
 }
